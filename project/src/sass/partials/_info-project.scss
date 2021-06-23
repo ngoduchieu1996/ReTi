@@ -1,0 +1,18 @@
+.text-info-project{
+    margin-top: 16px;
+    margin-bottom: 8px;
+    height: 166px;
+    overflow: hidden;
+}
+.info-project{
+    display: none;
+    .matbangduan-partial{
+        padding-top: 0;
+        margin-bottom: 40px;
+    }
+}
+@media(min-width:320px) and (max-width:768px){
+    .info-project{
+        display: block;
+    }
+}

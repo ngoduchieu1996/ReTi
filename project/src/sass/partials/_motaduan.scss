@@ -1,0 +1,45 @@
+/*mo ta du an*/
+.motaduan-partial {
+  width: 50%;
+  .motaduan-content {
+    margin-top: 16px;
+    width: 100%;
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    max-width: 645px;
+
+    .except-more {
+      @media (min-width: 998px) {
+        width: 645px;
+      }
+    }
+  }
+  .motaduan-link {
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 163.42%;
+    text-decoration-line: underline;
+    color: #0c77c6;
+
+    a {
+      color: #0c77c6;
+      font-weight: 500;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 414px) {
+  .container {
+    .motaduan-partial {
+      width: 100%;
+      .motaduan-content {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+/* Progress */
+.progress {
+  &-box {
+  }
+  &-barc {
+    height: 8px;
+    border-radius: 8px;
+    background-color: #e0e0e0;
+    margin: 100px 0;
+    position: relative;
+    span.progress-per {
+      display: block;
+      height: 100%;
+      border-radius: 8px;
+      background-color: $main-color;
+      position: relative;
+      overflow: hidden;
+      transition: width 2s ease-out;
+    }
+  }
+  &-status {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .tick-complete {
+      display: flex;
+      width: 32px;
+      justify-content: center;
+      align-items: center;
+      height: 32px;
+      background-color: #e0e0e0;
+      border-radius: 50%;
+      i {
+        display: none;
+      }
+    }
+    &.active .tick-complete {
+      background-color: $main-color;
+      i {
+        display: unset;
+      }
+    }
+    .date-status {
+      position: absolute;
+      top: 130%;
+      text-align: center;
+      transform: translateX(-35%);
+      .date {
+        padding: 0 10px;
+        color: #000;
+      }
+      .status {
+        font-size: 12px;
+        font-style: italic;
+        color: #8d8d8d;
+      }
+    }
+    &:nth-child(odd) .date-status {
+      top: unset;
+      bottom: 130%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .progress {
+    &-barc {
+      height: 400px;
+      width: 4px;
+      margin: 30px 17px;
+      .progress-per {
+        width: 100%;
+      }
+    }
+    &-status {
+      top: unset;
+      left: 50%;
+      .date-status {
+        top: -2px;
+        left: 260%;
+        text-align: left;
+        .date {
+          padding: 0 60px 0 0;
+          font-size: 16px;
+        }
+      }
+      &:nth-child(odd) .date-status {
+        top: -2px;
+        bottom: unset;
+      }
+    }
+  }
+}

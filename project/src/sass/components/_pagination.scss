@@ -1,0 +1,19 @@
+.page-link{
+    border: none;
+    color: black;
+    &:focus {
+        box-shadow: none;
+    }
+    &:hover {
+        color:white;
+        text-decoration: none;
+        background-color: #56C4CF;
+        border-color: #dee2e6;
+    }
+    &.active {
+        color:white;
+        text-decoration: none;
+        background-color: #56C4CF;
+        border-color: #dee2e6;
+    }
+}

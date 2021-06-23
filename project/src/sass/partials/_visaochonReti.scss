@@ -1,0 +1,67 @@
+/*vi sao chon Reti*/
+$col4: 98%/3;
+.container{
+    .viSaoChonReti-row1{
+        margin-top: 90px;
+    }
+    .viSaoChonReti-row2{
+        @include flexbox();
+        @include justify-content(space-between);
+        .viSaoChonReti-col1{
+            width: 330px;
+            text-align: center;
+            margin-bottom: 49px;
+            .check{
+                @include flexbox();
+                @include justify-content(center);
+                margin-bottom: 20px;
+                .check1{
+                    background-color: $main-color;
+                    width: 80px;
+                    height: 80px;
+                    border: 1px solid $main-color;
+                    border-radius: 50%;
+                    padding: 29px 29px 32px 29px;
+                }
+            }
+            .viSaoChonReti-title{
+                @include text_title();
+                color: $main-color;
+                font-weight: bold;
+            }
+            .viSaoChonReti-content{
+                @include text_description();
+            }
+            &:nth-child(1){
+                margin-right: 49px;
+            }
+            &:nth-child(2){
+                margin-right: 49px;
+            }
+        }
+    }
+}
+
+@include Responsive(XS){
+    .container{
+        .viSaoChonReti-row2{
+            @include flexbox();
+            @include flex-direction(column);
+            .viSaoChonReti-col1{
+                width: 100%;
+            }
+        }
+    }
+}
+@include Responsive(SM){
+    .container{
+        .viSaoChonReti-row2{
+            @include flexbox();
+            @include flex-direction(column);
+            .viSaoChonReti-col1{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

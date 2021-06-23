@@ -1,0 +1,73 @@
+/* TIEN ICH*/
+.utilities{
+    width: 50%;
+    .utilities-content{
+        margin-top: 30px;
+        .utilities-item{
+            margin-bottom: 20px;
+        }
+    }
+    .utilities-item{
+        span{
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+        }
+    }
+}
+.btn-mobile-utilities{
+    display: none;
+}
+@include Responsive(MD){
+    .utilities{
+        .utilities-item{
+            span{
+                font-size: 10px;
+            }
+        }
+    }
+}
+@media(min-width:768px) and (max-width:1023px){
+    .utilities{
+        [class*='col']{
+            padding: 0;
+        }
+    }
+    .utilities{
+        .utilities-item{
+            span{
+                font-size: 9px;
+            }
+        }
+    }
+}
+@media(min-width:320px) and (max-width:767px){
+    .utilities{
+        width: 100%;
+        .utilities-item{
+            span{
+                font-size: 12px;
+            }
+        }
+        .show-item{
+            max-height: 323px;
+            transition: .5s;
+        }
+        h2{
+            font-size: 26px;
+        }
+        .utilities-content{
+            width: 100% !important;
+        }
+    }
+    .btn-mobile-utilities{
+        display: contents;
+    }
+    .utilities-content{
+        overflow: hidden;
+        max-height: 95px;
+        transition: .5s;
+    }
+    
+}

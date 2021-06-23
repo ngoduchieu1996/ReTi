@@ -1,0 +1,21 @@
+/* TITLE PAGE */
+.title-partial{
+    .icon-title{
+        margin-bottom: 30px;
+    }
+    text-align: center;
+    h2{
+        @include title_partials();
+    }
+}
+@media(min-width:320px) and (max-width:768px){
+    .title-partial{
+        .icon-title{
+            margin-bottom: 16px;
+        }
+        text-align: center;
+        h2{
+            @include title_partials_mobile();
+        }
+    }
+}

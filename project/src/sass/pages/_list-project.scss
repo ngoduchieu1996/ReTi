@@ -1,0 +1,132 @@
+/*LIST PROJECT*/
+#list_project{
+    .slide-card-duannoibat{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+}
+#pay-home{
+    padding: 35px 0;
+    background-color: #F2F2F2;
+    margin-bottom: 50px;
+}
+#form-contact{
+    margin-bottom: 50px;
+}
+#map {
+    padding-top: 15px;
+}
+
+#filter-control {
+    margin-top: 10px;
+    .acreage,.apartment {
+        margin-left: 0;
+    }
+}
+#list_project {
+    margin-top: 60px;
+}
+#pay-home {
+    margin-top: 50px;
+}
+.price-range{
+        .irs-min,.irs-max,.irs-grid-text{
+            display: none !important;
+        }
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #56C4CF;
+    border-color: $main-color !important;
+}
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: unset;
+}
+input[type=checkbox]:checked + label {
+    font-weight: 500;
+} 
+.next-page:hover{
+    background-color: #333132;
+}
+.pre-page:hover{
+    background-color: #333132;
+}
+.card-badge-price{
+    position: absolute;
+    width: 73px;
+    height: 29px;
+    top: 48px;
+    left: -6px;
+    z-index: 9;
+}
+.card-badge-hightlight{
+    position: absolute;
+    width: 73px;
+    height: 29px;
+    top: 81px;
+    left: -6px;
+    z-index: 9;
+}
+
+@media (max-width: 768px) {
+    #list_project {
+        margin-top: 20px;
+    }
+    #filter-control {
+        margin-top: 0;
+    }
+    #list_project .slide-card-duannoibat{
+        margin-top: 16px;
+        margin-bottom: 20px;
+    }
+}
+@media(min-width:320px) and (max-width:768px) {
+    #list_project .title-partial-horizontal{
+        text-align: center;
+        display: flex;
+        .icon-title-horizontal{
+            margin-right: 20px;
+        }
+        h2{
+            @include title_partials();
+            margin: 0;
+        }
+        img{
+            transform: rotate(0);
+            margin-bottom: unset;
+        }
+    }
+    #map{
+        display: none;
+    }
+}
+#map{
+    margin-left: 20px;
+    display: none;
+    width:30%;
+}
+.map-fixed {
+    position: relative;
+    iframe {
+        position: fixed;
+        top: 20%;
+        width: 333px;
+        // width: 100% !important;
+    }
+}
+.card-category{
+    padding: 0 5px;
+}
+@media(min-width:320px) and (max-width:414px) {
+    .card-category{
+        .card-price {
+            font-size: 20px;
+            .card-price-vnd {
+                font-size: 16px;
+            }
+        }
+        .card-buy{
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+/*ĐƠN HÀNG PAGE*/
+#order-page{
+    .pt-16{
+        padding-top: 45px;
+    }
+    .partner_reti{
+        margin-bottom: 30px;
+    }
+    .space{
+        width: 100%;
+        max-height: 379px;
+    }
+    .mb-379{
+        margin-bottom: 379px;
+    }
+}
+#Textarea1{
+    height: 126px;
+}
+.discount{
+    .form-control{
+        font-size: 12px;
+    }
+}
+
+@media(min-width:1024px){
+    .no-wrap-ipad{
+        flex-wrap: nowrap !important;
+    }
+}
+@media(min-width:320px) and (max-width:768px){
+    .wrap-revert{
+        flex-wrap: wrap-reverse;
+    }
+    .order{
+        margin-top: 40px;
+    }
+    #order-page .mb-379 {
+        margin-bottom: 40px;
+    }
+}
+@media(max-width:414px){
+    .order-page{
+        padding: 0 10px;
+    }
+    .order .confim{
+        width: 343px;
+    }
+}
+@media(min-width:320px) and (max-width:414px){
+    .info-order-top .img-product {
+        width: 100px;
+        height: 83px;
+    }
+    .info-order-bottom{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .info-order-top{
+        display: flex;
+    }
+    .info-order-bottom .text-info-order {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .info-order-bottom .text-adress {
+        font-size: 10px;
+        padding-top: 0;
+    }
+    .info-order{
+        padding: 16px 8px !important;
+        width: 386px;
+        margin: auto;
+    }
+    .info-order-bottom .text-info-order {
+        width: 89%;
+    }
+    #Textarea1{
+        height: 90px;
+    }
+}
+
+@media(max-width:375px){
+    .info-order {
+        width: 360px;
+    }
+    .info-order-bottom .text-adress {
+        font-size: 9px;
+    }
+    .deposit .deposit-headings {
+        font-size: 16px;
+    }
+    .deposit .result {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .discount .form-control {
+        font-size: 12px;
+    }
+}

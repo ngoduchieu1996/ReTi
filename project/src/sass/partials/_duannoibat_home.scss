@@ -1,0 +1,58 @@
+.duannoibat-home{
+    &-title{
+        line-height: 40px;
+        font: {
+            family:$roboto_slab;
+            style: normal;
+            size: 32px;
+        };
+    }
+    &-showall{
+        margin-top: 29px;;
+        a{
+            background: #56C4CF;
+            border-radius: 4px;
+            width: 143.85px;
+            height: 30px;
+            color: white;
+            font-family:$roboto;
+            text-decoration: none;
+            font-weight: 500;    
+        }
+    }
+    .view-all{
+        width: 170px;
+        height: 45px;
+    }
+}
+@include Responsive(MD){
+    .card {
+        &-price{
+            font-size: 12px;
+        }
+        &-buy{
+            padding: .25rem!important;
+        }
+    }
+}
+@include Responsive(SM){
+    .card-media-768{
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+}
+@include Responsive(XS){
+    .card{
+        max-width: 100%;
+        flex: 0 0 100%;
+        &-price{
+            font-size: 16px;
+        }
+        &-price{
+            padding: 0.25rem !important;
+        }
+        &-buy{
+            padding: 0.25rem !important;
+        }
+    }
+}

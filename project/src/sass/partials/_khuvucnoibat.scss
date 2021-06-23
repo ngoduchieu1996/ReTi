@@ -1,0 +1,144 @@
+/*KHU VUC NOI BAT*/
+$boderRadius: 8px;
+$boderRadiusTitle: 0px 0px 8px 8px;
+
+.image-thumbail {
+    position: relative;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+    .khuVucNoiBat{
+        @extend .container;
+            .top{
+                @include flexbox();
+                @include flex-direction(column); 
+                text-align: center;
+                height: 10%;
+                width: 100%;
+                margin-bottom: 30px;
+                img{
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 30px;
+                }
+                h2{
+                    @include title_partials();
+                }
+            }
+            .khuVucNoiBat-colLeft{
+                @include flexbox();
+                @include flex-direction(column);   
+                width: 49%;
+                margin-right: 20px;
+                border-radius: $boderRadius;
+                .image-thumbail {
+                    padding-top: 110%;
+                }
+                img{
+                    border-radius: 8px 8px 0 0 ;
+                }
+                @include Responsive(XS) {
+                    width: 100%;
+                    margin-bottom: 20px;
+                } 
+                @include Responsive(SM) {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                .title{
+                    @include flexbox();
+                    @include align-items(center);
+                    justify-content: space-between;
+                    background-color: $main-color;
+                    border-radius: $boderRadiusTitle;
+                    // font{
+                    //     family: Roboto;
+                    //     style: normal;
+                    //     weight: bold;
+                    //     size: 16px;
+                    // }
+                    line-height: 24px;
+                    color: $white-color;
+                    p{
+                        padding: 23px;
+                        margin: 0;
+                    }
+                }
+            }
+            .khuVucNoiBat-colRight{
+                @extend .khuVucNoiBat-colLeft;
+                background-image: none;
+                margin-right:0;
+                justify-content: space-between;
+                .image-thumbail {
+                    padding-top: 46.6%;
+                    img {
+                        
+                    }
+                }
+                img{
+                    object-fit: cover;
+                }
+                .rightTop{
+                    flex: 1;
+                    margin-bottom: 20px;
+                    @extend .khuVucNoiBat-colLeft;
+                    width: 100%;
+                    .title{
+                        @extend .title;
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .rightBottom{
+                    @extend .khuVucNoiBat-colLeft;
+                    @extend .rightTop;
+                    margin-bottom: unset;
+                    margin-bottom: 0;
+                    .title{
+                        @extend .title;
+                    }
+                    img{
+                       width: 100%;
+                       height: 100%;
+                    }
+                }
+            }
+    }
+@media(min-width:320px) and (max-width:1024px){
+    .khuVucNoiBat{
+        .khuVucNoiBat-colLeft{
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+            flex: unset;
+        }
+    }
+    .khuVucNoiBat {
+        .khuVucNoiBat-colRight{
+            width: 100%;
+            flex: unset;
+        }
+    }
+}
+@media(min-width:320px) and (max-width:414px){
+    
+}
+@media (max-width: 850px) {
+    .image-thumbail {
+        padding-top: 90% !important;
+    }
+}
+.city p,.count p{
+    font-weight: bold;
+}

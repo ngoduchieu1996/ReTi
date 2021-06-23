@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+    <link rel="stylesheet" href="../../../dist/css/styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="filter-more">
+            <div class="row filter-top">
+                <div class="acreage col-6">
+                    <p class="text-filter">Diện tích (M2)</p>
+                    <div class="range pb-20">
+                        <input type="text" class="js-range-slider" name="my_range" value="" data-type="double"
+                            data-min="0" data-max="1000" data-from="200" data-to="500" data-grid="true" />
+                    </div>
+                </div>
+                <div class="buy-online col-6">
+                    <p class="text-filter">Hình thức mua</p>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label class="custom-control-label" for="customSwitch1">Hình thức mua online</label>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-bottom">
+                <div class="row">
+                    <div class="furniture col-6">
+                        <p class="text-filter">Nội thất bàn giao</p>
+                        <div class="row justify-content-between mb-15 pl-15">
+                            <div class="custom-control custom-checkbox col-6">
+                                <input type="checkbox" class="custom-control-input" id="customCheck" name="Condotel">
+                                <label class="custom-control-label" for="customCheck">Thô</label>
+                            </div>
+                            <div class="custom-control custom-checkbox col-6">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" name="Officetel">
+                                <label class="custom-control-label" for="customCheck1">Toàn bộ</label>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between mb-15 pl-15">
+                            <div class="custom-control custom-checkbox col-6">
+                                <input type="checkbox" class="custom-control-input" id="customCheck" name="Condotel">
+                                <label class="custom-control-label" for="customCheck">Đính tường</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project col-6">
+                        <p class="text-filter">Đặc tính dự án</p>
+                        <div class="row justify-content-between mb-15 pl-15">
+                            <div class="custom-control custom-checkbox col-6">
+                                <input type="checkbox" class="custom-control-input" id="customCheck" name="Condotel">
+                                <label class="custom-control-label" for="customCheck">Độc quyền</label>
+                            </div>
+                            <div class="custom-control custom-checkbox col-6">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" name="Officetel">
+                                <label class="custom-control-label" for="customCheck1">Mới</label>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between mb-15 pl-15">
+                            <div class="custom-control custom-checkbox col-6">
+                                <input type="checkbox" class="custom-control-input" id="customCheck" name="Condotel">
+                                <label class="custom-control-label" for="customCheck">Giá tốt</label>
+                            </div>
+                            <div class="custom-control custom-checkbox col-6">
+                                <input type="checkbox" class="custom-control-input" id="customCheck" name="Condotel">
+                                <label class="custom-control-label" for="customCheck">Nổi bật</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="row justify-content-end">
+                        <button class="btn-delete">Xoá</button>
+                        <button class="btn-update">Cập nhật</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="../../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

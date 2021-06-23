@@ -1,0 +1,52 @@
+/*project_classification*/
+.project_classification{
+    display: flex;
+    flex-wrap: wrap;
+    .project{
+        display: flex;
+        flex-direction: column;
+        h6 {
+            font-weight: bold;
+        }
+       ul{
+           flex: auto;
+           margin-bottom: 56px;
+        a{
+            color: black;
+            font-size: 12px;
+        }
+       }
+        a:hover{
+            text-decoration: none;
+        }
+    }
+    .icon-more{
+        font-size: 9px;
+        margin-left: .9rem;
+    }
+    a{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        color: #0C77C6;
+    }
+}
+
+@media(max-width: 850px) {
+    .project_classification {
+        .project {
+            margin-bottom: 30px;
+        }
+    }
+}
+@media(min-width:320px) and (max-width:414px){
+    .project_classification{
+        .project{
+            ul{
+                margin-bottom: 16px;
+            }
+        }
+    }
+    
+}

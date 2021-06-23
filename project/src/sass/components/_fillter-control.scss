@@ -1,0 +1,225 @@
+.filter-control{
+    .fileter-control-mobile-header {
+        display: none;
+    }
+    .btn-update {
+        width: 86px;
+        margin-left: 12px;
+    }
+    .btn-control {
+        position: relative;
+    }
+    .btn-filter{
+        border: none;
+        border-radius: 2px;   
+        margin-right: 20px;
+        // padding: 9px 10px;
+        // width: 88px;
+        height: 32px;
+        font-size: 12px;
+        font-family: $roboto;
+        &.active {
+            background-color: $main-color;
+            color: #fff;
+            outline: none;
+        }
+        i{
+            font-size: 7px;
+            margin-left: 12.5px;
+        }
+    }
+    .btn-show-result-htm {
+        display: none;
+        button {
+            background-color: $main-color;
+            color: #fff;
+            border: unset;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            width: 100%;
+            height: 48px;
+            border-radius: 5px;
+            &:focus {
+                background-color: #4d9ea5;
+                color: $gray-color;
+            }
+        }
+    }
+    .control-table {
+        display: none;
+        position: absolute;
+        z-index: 20;
+        top: 50px;
+        right: 20px;
+        &.active {
+            display: block;
+        }
+        form {
+            padding: 0;
+            max-width: unset;
+        }
+    }
+    
+    a{
+        padding-right: 10px;
+        font-size: 12px;
+        font-family: $roboto;
+    }
+    .delete-filter a {
+        color: $link-color;
+    }
+    .view-map{
+        padding-top: 3px;
+        display: flex;
+        align-items: center;
+        span{
+            font-size: 12px;
+            font-family: $roboto;
+            padding-right: 5px;
+        }
+    }
+    
+    .property-type{
+        width: 377px;
+    }
+    .price-range{
+        top: 51px;
+    }
+    .filter-more{
+        width: 752px;
+    }
+    .btn-active{
+        color: white;
+        background-color: #56C4CF;
+    }
+    .price-bds{
+        button{
+            width: 114px;
+        }
+    }
+    .price{
+        button{
+            width: 58px;
+        }
+    }
+    .advanced{
+        button{
+            width: 88px;
+        }
+    }
+}
+
+
+// Filter mobile 
+.filter-control-mobile {
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    background-color: #fff;
+    bottom: 0;
+    display: none;
+    overflow-y: scroll;
+    &.close-animt {
+        display: block;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: slidemenuback;
+    }
+    &.active {
+        display: block;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: slidemenushow;
+    }
+    .fileter-control-mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 15px;
+        border-bottom: 1px solid #EDEDED;
+        margin-bottom: 10px;
+        margin-left: -15px;
+        margin-right: -15px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        border: 1px solid #EDEDED;
+        z-index: 9;
+        & > * {
+            width: 33.33333337%;
+        }
+        .refresh-btn a {
+            color: $link-color;
+        }
+        h4 {
+            font-weight: 500;
+            font-size: 16px;
+            color: #000;
+            margin-bottom: 0;
+        }
+        #close-filter {
+            color: #000;
+            i {
+                font-size: 18px;
+            }
+        }
+    }
+    .btn-filter {
+        display: none;
+    }
+    .control {
+        display: none;
+    }
+    .control-table {
+        display: block;
+        position: unset;
+        padding: 0;
+        width: 100%;
+        max-height: unset;
+        min-height: unset;
+        height: fit-content;
+        border: unset;
+        box-shadow: unset;
+        &::before {
+            content: unset;
+        }
+        .custom-control-label {
+            &::before {
+                width: 14px;
+                height: 14px;
+            }
+            &::after {
+                width: 14px;
+                height: 14px;
+            }
+        }
+        .custom-switch {
+            // display: none;
+            .custom-control-label {
+                &::before {
+                    width: 1.75rem;
+                    height: 1rem;
+                }
+                &::after {
+                    width: calc(1rem - 4px);
+                    height: calc(1rem - 4px);
+                }
+            }
+        }
+        
+    }
+    .btn-show-result-htm {
+        display: block;
+        position: sticky;
+        width: 100%;
+        bottom: 0;
+    }
+    .filter-top {
+        border-bottom: none;
+    }
+    .delete-filter, .save-search, .view-map {
+        display: none;
+    }
+}

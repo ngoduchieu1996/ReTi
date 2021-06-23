@@ -1,0 +1,214 @@
+/* ĐƠN HÀNG*/
+.title-order{
+    font-family: $roboto_slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    color: #333132
+}
+.order{
+    .form-control{
+        height: 40px;
+    }
+    form{
+        label{
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 24px;
+            color: #000000;
+        }
+        input,textarea{
+            border: 1px solid #E0E0E0;
+            border-radius: 4px;
+        }
+        sup{
+            color: red;
+        }
+        select{
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 24px;
+            color: #E0E0E0;
+        }
+        input:placeholder-shown{
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 24px;
+            color: #E0E0E0;
+        }
+        textarea:placeholder-shown{
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 24px;
+            color: #E0E0E0;
+        }
+    }
+    .note{
+        font-family: $roboto;
+        font-style: italic;
+        // font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        color: #4F4F4F;
+    }
+    .confim{
+        background: #56C4CF;
+        border-radius: 2px;
+        width: 425px;
+        height: 52px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 52px;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        display: block;
+    }
+}
+.info-order-top{
+    .img-product{
+        width: 100%;
+    }
+}
+.info-order-bottom{
+    padding-left: 16px;
+    .text-adress{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #8D8D8D;
+        margin-bottom: 14px;
+        padding-top: 16px;
+        display: inline-block;
+    }
+    .text-info-order{
+        font-family: $roboto_slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        color: #333132;
+        width: 304px;
+    }
+}
+.details-info{
+    .row{
+        margin-left: 0;
+        justify-content: space-between;
+        margin-right: 0;
+    }
+    .headings{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: #000000;
+    }
+    .result{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: right;
+
+        color: #000000;
+    }
+}
+.details-top{
+    padding-bottom: 16px;
+    margin-bottom: 17px;
+    sup{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .row{
+        margin-bottom: 8px;
+    }
+    border-bottom: 1px solid #E0E0E0;
+}
+.details-info .price{
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 15px;
+    sup{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .row{
+        margin-bottom: 6px;
+    }
+    .mini-text{
+        font-size: 14px;
+        line-height: 24px;
+        color: #000000;
+        font-style: italic;
+    }
+}
+.discount{
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 16px;
+    input{
+        width: 207px;
+    }
+    .row{
+        margin-bottom: 16px;
+    }
+    .bold{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 24px;
+        color: #000000;
+    }
+    .mini-text{
+        font-size: 14px;
+        line-height: 24px;
+        color: #000000;
+        font-style: italic;
+    }
+    .orange{
+        color: #EF5B40;
+    }
+}
+.deposit{
+    .deposit-headings{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        color: #000000;
+    }
+    .orange{
+        color: #EF5B40; 
+    }
+    .result{
+        font-size: 20px;
+    }
+}
+.info-order{
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+    .content-order{
+        padding-top: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

@@ -1,0 +1,143 @@
+.table-product {
+  .list-tab {
+    margin-top: 30px;
+    background: #f2f2f2;
+    margin-bottom: 0;
+    li {
+      width: 265px;
+      display: inline-block;
+      text-align: center;
+      height: 48px;
+      a {
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 48px;
+        align-items: center;
+        color: #333132;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+    .active-table-tab {
+      background-color: #56c4cf;
+      a {
+        color: white;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+  .tab-items {
+    display: none;
+  }
+  .active-item-table {
+    display: block;
+  }
+}
+.choose {
+  align-items: center;
+  padding-top: 20px;
+  .form-group {
+    width: 265px;
+    height: 48px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 15px;
+      background-image: url("../images/chevron-down.png");
+      width: 12px;
+      height: 12px;
+      pointer-events: none;
+    }
+
+    select {
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+    }
+  }
+  p {
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #828282;
+  }
+  select {
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #bdbdbd;
+  }
+  .form-control {
+    height: 48px !important;
+  }
+}
+.banghang-partial {
+  display: none;
+}
+.annotate {
+  padding-top: 20px;
+  p {
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 9px;
+  }
+  img {
+    margin-right: 8px;
+  }
+  .stocking,
+  .booking {
+    margin-right: 19px;
+  }
+  .item-annotate {
+    span {
+      font-size: 12px;
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 450px) {
+  .table-product {
+    // max-width: 342px;
+    // width: 342px;
+    .list-tab {
+      display: flex;
+      li {
+        width: 171px;
+      }
+      max-width: 342px;
+    }
+    .table-pc {
+      display: none;
+    }
+    .banghang-partial {
+      display: block;
+    }
+    .annotate {
+      display: none;
+    }
+    .choose {
+      width: 100%;
+      flex-wrap: wrap;
+      .form-group {
+        width: 100%;
+      }
+    }
+  }
+}

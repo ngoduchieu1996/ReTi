@@ -1,0 +1,139 @@
+/* CARD SLIDE*/
+
+.card-slider{
+    max-width: 550px;
+    min-height: 170px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    display:flex;
+    .card-slider-img{
+        img{
+            height: 100%;
+            width: 170px;
+        }
+    }
+    .card-info-title{
+        margin-bottom: 9px;
+        h5{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+            color: #0C77C6;
+        }
+    }
+    .text-card-info{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #333132;
+    }
+    .card-info-project{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 23px;
+    }
+    .card-price-slide{
+        display: flex;
+        justify-content: space-between;
+        .price-card{
+            display: flex;
+            align-items: center;
+            .vnd{
+                background: #EF5B40;
+                border-radius: 4px;
+                color: white;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                padding: 2px 8px;
+                margin-right: 6px;
+            }
+            .amount{
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 24px;
+                color: #EF5B40;
+            }
+        }
+    }
+    .card-slide-info{
+        width: calc(100% - 170px);
+        padding: 15px 10px 17px 20px;
+    }
+    .mg-card{
+        margin-bottom: 8px;
+    }
+    .card-price-slide{
+        .purchase{
+            background: #0C77C6;
+            border-radius: 4px;
+            padding: 2px 10px 2px 8px;
+            line-height: 16px;
+        }
+        span{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            color: #FFFFFF;
+        }
+    }
+}
+@media(min-width:320px) and (max-width:450px){
+    .card-slider{
+        // max-width: 343px;
+        min-height: 175px;
+        .card-slider-img{
+            img{
+                // height: 175px;
+                width: 128px;
+            }
+        }
+        .card-slide-info{
+            padding: 8px 8px 19px 18px;
+            width: calc(100% - 128px);
+        }
+        .card-adress,.card-type{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .card-price-slide{
+            .price-card{
+                .vnd{
+                    font-size: 10px;
+                    padding: 3px 5px;
+                    // height: 16px;
+                }
+                .amount{
+                    font-size: 14px;
+                }
+            }
+        }
+        .card-info-project{
+            margin-bottom: 12px;
+        }
+        .card-price-slide{
+            .purchase{
+                background: #0C77C6;
+                border-radius: 4px;
+                padding: 2px 4px;
+                // height: 16px;
+            }
+            span{
+                font-size: 10px;
+            }
+        }
+        .card-info-project{
+            flex-wrap: wrap;
+            .card-acreage{
+                width: 100%;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    
+}

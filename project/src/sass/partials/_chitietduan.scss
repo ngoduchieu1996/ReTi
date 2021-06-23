@@ -1,0 +1,409 @@
+/*chi tiet du an*/
+.chitietduan-partial {
+  .slick-next:hover {
+    right: -4%;
+    background-color: #333333;
+    width: 12px;
+    height: 69px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/chitietduan/VectorRight.png);
+    top: 54%;
+  }
+  .slick-next:focus {
+    right: -4%;
+    background-color: #333333;
+    width: 12px;
+    height: 69px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/chitietduan/VectorRight.png);
+    top: 54%;
+  }
+  .slick-prev:hover {
+    background-color: #333333;
+    width: 12px;
+    height: 69px;
+    z-index: 9;
+    background-image: url(../images/chitietduan/VectorLeft.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    top: 54%;
+  }
+  .slick-prev::before {
+    background-color: #333333;
+    width: 12px;
+    height: 69px;
+    z-index: 9;
+    background-image: url(../images/chitietduan/VectorLeft.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    top: 54%;
+  }
+  @include flexbox();
+  .chitietduan-leftcolumn {
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    max-width: 645px;
+    height: 554px;
+
+    .slick-slide img {
+      display: block;
+      width: 100%;
+    }
+    .chitietduan-slider-top {
+      .chitietduan-slider-item {
+        img {
+          position: relative;
+          height: 480px;
+        }
+      }
+      .slick-prev {
+        display: none !important;
+      }
+      .slick-next {
+        right: 3%;
+        background-color: #000000;
+        opacity: 0.3;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        z-index: 9;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/chitietduan/VectorRight.png);
+        top: 54%;
+        visibility: hidden;
+      }
+    }
+    .stroke {
+      display: none;
+    }
+  }
+  .chitietduan-slider-bot {
+    @include flexbox();
+    @include justify-content(space-between);
+  }
+  .chitietduan-slider-bottom {
+    padding-bottom: 0;
+    padding-left: 17px;
+    width: 432px;
+    height: 74px;
+    .slick-list {
+      height: 120px;
+    }
+    .slick-slide {
+      margin: 5px 5px 0px 0px;
+    }
+    img {
+      height: 69px;
+      width: 100px;
+    }
+  }
+  .chitietduan-button {
+    @include flexbox();
+    @include justify-content(flex-end);
+    width: 196px;
+    padding-top: 5px;
+    .chitietduan-btn {
+      margin-left: 5px;
+      width: 88px;
+      height: 69px;
+      border: none;
+      border-radius: 2px;
+      background-color: $main-color;
+      div {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        a {
+          color: white;
+          margin-left: auto;
+          margin-right: auto;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 130.08%;
+          color: #ffffff;
+        }
+        img {
+          @extend a;
+        }
+      }
+    }
+  }
+  .slick-prev {
+    background-color: #333333;
+    width: 12px;
+    height: 69px;
+    z-index: 9;
+    background-image: url(../images/chitietduan/VectorLeft.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    top: 54%;
+  }
+  .slick-next {
+    right: -4%;
+    background-color: #333333;
+    width: 12px;
+    height: 69px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/chitietduan/VectorRight.png);
+    top: 54%;
+  }
+  .slick-prev:before {
+    color: #56c6d0;
+    display: none;
+  }
+  .slick-next::before {
+    display: none;
+  }
+}
+.chitietduan-rightcolumn {
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(space-around);
+  padding-left: 20px;
+  // width: 455px;
+  height: 554px;
+  @include Responsive(SM) {
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 15px;
+  }
+}
+
+/*chi tiet du an - responsive*/
+@include Responsive(SM) {
+  .chitietduan-partial {
+    @include flex-wrap(wrap);
+    margin-top: 0;
+    .chitietduan-leftcolumn {
+      width: 100%;
+      height: auto;
+      .chitietduan-slider-top {
+        .chitietduan-slider-item {
+          img {
+            height: 230px;
+            max-height: 230px;
+          }
+        }
+        .slick-next {
+          visibility: visible;
+        }
+      }
+      .chitietduan-slider-bot {
+        .chitietduan-slider-bottom {
+          display: none;
+        }
+        .chitietduan-button {
+          @include flexbox();
+          @include justify-content(space-between);
+          width: 100%;
+          margin: 4px 11px;
+          .chitietduan-btn {
+            width: 50%;
+            // height: 38px;
+          }
+        }
+      }
+      .chitietduan-button {
+        @include flexbox();
+        width: 196px;
+        padding-top: 5px;
+        .chitietduan-btn {
+          display: block;
+          margin-left: 5px;
+          width: 93px;
+          height: 38px;
+          border: none;
+          border-radius: 2px;
+          background-color: $main-color;
+          a {
+            color: white;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 130.08%;
+            color: #ffffff;
+          }
+          img {
+            color: white;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 130.08%;
+            color: #ffffff;
+          }
+        }
+      }
+      .chitietduan-rightcolumn {
+        width: 100%;
+        .info-department {
+          width: 100%;
+          border: none;
+          .details {
+            .control-buy {
+              .buy-now {
+                width: 100%;
+              }
+              .sign {
+                width: 100%;
+              }
+            }
+          }
+          .policy-department {
+            .share {
+              visibility: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 414px) {
+    .chitietduan-partial {
+      @include flex-wrap(wrap);
+      margin-top: 0;
+      .chitietduan-leftcolumn {
+        max-width: 375px;
+
+        margin-left: -15px;
+        margin-right: -15px;
+        width: calc(100% + 30px);
+        .chitietduan-slider-top {
+          .slick-next {
+            visibility: visible;
+          }
+        }
+        .stroke {
+          display: inline-block;
+          top: 18px;
+          z-index: 9;
+          position: absolute;
+          right: 40px;
+          img {
+            margin-left: 12px;
+          }
+        }
+        .chitietduan-slider-bot {
+          .chitietduan-slider-bottom {
+            display: none;
+          }
+          .chitietduan-button {
+            @include flexbox();
+            @include justify-content(space-between);
+            width: 100%;
+            margin-left: 8px;
+            margin-right: 8px;
+            justify-content: space-between;
+            .chitietduan-btn {
+              margin-left: 0;
+              min-width: 167px;
+              min-height: 38px;
+              max-width: 167px;
+              max-height: 38px;
+              div {
+                @include flex-direction(row);
+                display: inline-block;
+                img {
+                  padding-top: 0px;
+                  padding-right: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .chitietduan-rightcolumn {
+        width: 100%;
+        margin-top: 0;
+        .info-department {
+          width: 100%;
+          border: none;
+          .details {
+            .control-buy {
+              margin-top: 23px;
+              .buy-now {
+                border-radius: 4px;
+                height: 52px;
+                width: 343px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                margin-left: -22.5px;
+                a {
+                  font-family: Roboto;
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 16px;
+                  line-height: 24px;
+                }
+              }
+              .sign {
+                border-radius: 4px;
+                height: 52px;
+                width: 343px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                margin-left: -22.5px;
+                a {
+                  font-family: Roboto;
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: 16px;
+                  line-height: 24px;
+                }
+              }
+            }
+          }
+          .policy-department {
+            .calculator {
+              a {
+                padding-left: 7px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #0c77c6;
+              }
+            }
+            .policy-sell {
+              a {
+                padding-left: 7px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #0c77c6;
+              }
+            }
+            .share {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

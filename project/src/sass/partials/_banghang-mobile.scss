@@ -1,0 +1,84 @@
+/*bang hang - mobile*/
+@include Responsive(SM){
+    .container{
+        .banghang-partial{
+            .banghang-tabs{
+                @include flexbox();
+                width: 100%;
+                padding-top: 30px;
+                .danhsach{
+                    width: 50%;
+                    text-align: center;
+                    background-color: $main-color;
+                    p{
+                        margin: 8px 22px;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 32px;
+                        color: #FFFFFF;
+                    }
+                }
+                .matbang{
+                    @extend .danhsach;
+                    background-color: #F2F2F2;
+                    p{
+                        color: #BDBDBD;
+                    }
+                }
+            }
+            .danhsach-table{
+                .danhsach-items{
+                    border-bottom: 1px solid #E5E5E5;;
+                    .danhsach-items-r1{
+                        @include flexbox();
+                        @include justify-content(space-between);
+                        padding: 8px 0px;
+                        .blue-side{
+                            color: #0C77C6;
+                        }
+                        .red-side{
+                            color: #EF5B40;
+                            font-weight: 600;
+                        }
+                    }
+                    .danhsach-items-r2{
+                        @include flexbox();
+                        @include justify-content(space-between);
+                        padding-bottom: 8px;
+                        .danhsach-details{
+                            .details-border{
+                                color: #E5E5E5;
+                            }
+                        }
+                        .blue-side{
+                            @extend .blue-side;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .danhsach-paging{
+                @include flexbox();
+                @include justify-content(flex-end);
+                padding: 20px 0px;
+                span{
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .paging-vector{
+                    .vectorleft{
+                        padding-left: 0;
+                        padding-right: 15px;
+                    }
+                    .vectorright{
+                        padding-left: 15px;
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

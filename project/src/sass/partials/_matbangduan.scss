@@ -1,0 +1,179 @@
+.ground {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  .slick-slide img {
+    display: block;
+    width: 100%;
+  }
+  .ground-slider-bottom {
+    .slick-list {
+      height: 120px;
+    }
+    .slick-slide {
+      margin: 10px;
+    }
+  }
+  .slick-prev {
+    background: rgba(245, 245, 245, 0.35);
+    width: 50px;
+    height: 50px;
+    z-index: 9;
+    background-image: url(../images/matbangduan/lefy.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    left: 1%;
+  }
+  .slick-next {
+    right: 1%;
+    background: rgba(245, 245, 245, 0.35);
+    width: 50px;
+    height: 50px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-image: url(../images/matbangduan/Shape.png);
+  }
+  .slick-prev:before {
+    color: #56c6d0;
+    display: none;
+  }
+  .slick-next::before {
+    display: none;
+  }
+}
+.tab-item {
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 10px 20px;
+  color: #7a7a7a;
+  border-bottom: 1px solid #ededed;
+  cursor: pointer;
+}
+.active-tab {
+  color: black;
+  font-weight: bold;
+  border-bottom: 2px solid #56c4cf;
+}
+.shark-title {
+  align-items: center;
+  h2 {
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1a1a1a;
+  }
+}
+.shark-content {
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #323232;
+  width: 50%;
+  margin: 10px 0;
+}
+.shark,
+.developer,
+.monitoring {
+  display: none;
+}
+.active-item {
+  display: block;
+}
+.content-tab-item {
+  a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 163.42%;
+    text-decoration-line: underline;
+    color: #0c77c6;
+  }
+}
+.ground .slick-next:hover {
+  right: 1%;
+  background: rgba(245, 245, 245, 0.35);
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-image: url(../images/matbangduan/Shape.png);
+}
+.ground .slick-next:focus {
+  right: 1%;
+  background: rgba(245, 245, 245, 0.35);
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-image: url(../images/matbangduan/Shape.png);
+}
+.ground .slick-prev:hover {
+  right: 1%;
+  background: rgba(245, 245, 245, 0.35);
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-image: url(../images/matbangduan/lefy.png);
+}
+.ground .slick-prev:focus {
+  right: 1%;
+  background: rgba(245, 245, 245, 0.35);
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-image: url(../images/matbangduan/lefy.png);
+}
+// .ground-slider-bottom{
+//     .slider-item-bb{
+//         position: relative;
+//         &::before{
+//             position: absolute;
+//             content: '';
+//             display: block;
+//             width: 100%;
+//             height: 100%;
+//             background: black;
+//             opacity: .5;
+//             z-index: 9;
+//         }
+//     }
+// }
+@media (min-width: 320px) and (max-width: 414px) {
+  .tab-item {
+    flex: 1;
+    padding: 0;
+    height: 37px;
+    min-width: 114px;
+    text-align: center;
+  }
+  .text-center-mb {
+    padding-left: 10px !important;
+  }
+  .ground .slick-prev {
+    display: none !important;
+  }
+  .ground .slick-next {
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
+    opacity: 0.3;
+    background-image: url(../images/arrw.png);
+  }
+}

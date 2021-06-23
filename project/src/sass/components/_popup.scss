@@ -1,0 +1,90 @@
+
+/*POP UP*/
+.popup-hover{
+    // margin: auto;
+    // height: 328px;
+    // width: 262px;
+    // background: #FFFFFF;
+    // border: 1px solid #E5E5E5;
+    // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    // padding: 8px 12px 8px 12px;
+    span{
+        font-size: 14px;
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 151.16%;
+        color: #000000;
+    }
+    .items-popup{
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .hover-title{
+        margin-bottom: 17px;
+    }
+    .code-department{
+        span{
+            font-size: 16px;
+        }
+        .hover-blue{
+            color: #007BFF;
+            font-weight: 500;
+        }
+    }
+    .hover-baged{
+        color: #3CC13B;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+        border-radius: 4px;
+        // padding: 6px 8px;
+        width: 87px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .hover-bold{
+        font-weight: bold;
+    }
+    .buy-hover{
+        width: 120px;
+        height: 40px;
+        background: #007BFF;
+        border-radius: 8px;
+        color: #FFFFFF;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 7px;
+        a{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 40px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+    .view-details{
+        margin-bottom: 16px;
+        a{
+            font-size: 12px;
+            line-height: 16px;
+            text-decoration-line: underline;
+            color: #2F80ED;
+        }
+    }
+    .viewer{
+        font-style: italic;
+        font-weight: normal;
+        font-size: 12px;
+        color: #828282;
+    }
+}
+@media(min-width:375px) and (max-width:414px){
+    .popup-hover{
+        .buy-hover{
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+$main-color: #56C4CF;
+$second-color: #EF5B40;
+$white-color: #fff;
+$text-color: #333132;
+$black-color: #000;
+$gray-color: #F2F2F2;
+$link-color: #0C77C6;
+$button-color: #007BFF;
+$gradient-color: linear-gradient(187.59deg, #20ABB9 1.33%, #56C5D0 86.35%);
+
+@mixin text-stroke($fillColor, $strokeWidth, $strokeColor) {
+    -webkit-text-fill-color: $fillColor;
+    -webkit-text-stroke-width: $strokeWidth;
+    -webkit-text-stroke-color: $strokeColor;
+}

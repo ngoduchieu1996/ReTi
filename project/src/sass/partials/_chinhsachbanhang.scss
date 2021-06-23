@@ -1,0 +1,40 @@
+.sales_policy{
+    margin-top: 12px;
+    padding-left: 15px;
+    .heading-sales_policy{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 32px;
+        color: #1A1A1A;
+    }
+    .result-sales_policy{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 32px;
+        color: #1A1A1A;
+    }
+    .payment{
+        margin-right: 39px;
+    }
+    .bank{
+        margin-right: 43px;
+    }
+    .support{
+        margin-right: 94px;
+    }
+    .time-support{
+        margin-right: 31px;
+    }
+    .row{
+        margin-bottom: 8px;
+    }
+}
+.chinhsachbanhang-partial{
+    h2{
+        color: #000000;
+    }
+}
